@@ -1,0 +1,41 @@
+.si-icons span {
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+	margin: 40px 30px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.si-icons-hover span {
+	width: 128px;
+	height: 128px;
+	margin: 50px 40px;
+}
+
+/* Fallback for browsers that don't support SVG - Generated with http://iconizr.com/ */
+
+.no-svg .si-icon-clock { background-image: url("clock.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/clock.png*/ }
+.no-svg .si-icon-contract { background-image: url("contract.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/contract.png*/ }
+.no-svg .si-icon-down-arrow { background-image: url("down-arrow.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/down-arrow.png*/ }
+.no-svg .si-icon-equalizer { background-image: url("equalizer.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/equalizer.png*/ }
+.no-svg .si-icon-flag { background-image: url("flag.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/flag.png*/ }
+.no-svg .si-icon-glass-empty { background-image: url("glass.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/glass.png*/ }
+.no-svg .si-icon-hamburger, .no-svg .si-icon-hamburger-cross { background-image: url("hamburger.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/hamburger.png*/ }
+.no-svg .si-icon-hourglass { background-image: url("hourglass.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/hourglass.png*/ }
+.no-svg .si-icon-mail { background-image: url("mail.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/mail.png*/ }
+.no-svg .si-icon-maximize, .no-svg .si-icon-maximize-rotate { background-image: url("maximize.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/maximize.png*/ }
+.no-svg .si-icon-monitor { background-image: url("monitor.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/monitor.png*/ }
+.no-svg .si-icon-nav-left-arrow { background-image: url("nav-left-arrow.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/nav-left-arrow.png*/ }
+.no-svg .si-icon-nav-up-arrow { background-image: url("nav-up-arrow.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/nav-up-arrow.png*/ }
+.no-svg .si-icon-lock { background-image: url("padlock.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/padlock.png*/ }
+.no-svg .si-icon-play { background-image: url("play.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/play.png*/ }
+.no-svg .si-icon-plus, .no-svg .si-icon-plus-cross { background-image: url("plus.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/plus.png*/ }
+.no-svg .si-icon-right-arrow { background-image: url("right-arrow.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/right-arrow.png*/ }
+.no-svg .si-icon-smiley { background-image: url("smiley.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/smiley.png*/ }
+.no-svg .si-icon-trash { background-image: url("trash.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/trash.png*/ }
+.no-svg .si-icon-volume { background-image: url("volume.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/volume.png*/ }
+.no-svg .si-icon-zoom { background-image: url("zoom.png")/*tpa=http://www.17sucai.com/preview/1/2014-03-05/AnimatedSVGIcons/png/zoom.png*/ }
+
+/* alternatively you can define that there is no background image when SVG is supported instead of using .no-svg */
