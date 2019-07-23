@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手机app通用模板简洁大气用户登录页面</title>
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta content="telephone=no" name="format-detection" />
+	<link href="style.css" tppabs="http://www.17sucai.com/preview/1527619/2019-04-21/Account/css/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="jquery.min.js" tppabs="http://www.17sucai.com/preview/1527619/2019-04-21/Account/js/jquery.min.js"></script>
+	<script type="text/javascript" src="form.js" tppabs="http://www.17sucai.com/preview/1527619/2019-04-21/Account/js/form.js"></script>
+
+
+</head>
+<body>
+<!--
+
+* 17素材vip建站专区模块代码
+* 详尽信息请看官网：http://www.17sucai.com/pins/vip
+*
+* Copyright , 温州易站网络科技有限公司版权所有
+*
+* 请尊重原创，未经允许请勿转载。
+* 在保留版权的前提下可应用于个人或商业用途
+
+-->
+<section class="aui-flexView">
+	<header class="aui-navBar aui-navBar-fixed">
+		<a href="javascript:;" class="aui-navBar-item">
+			<i class="icon icon-return"></i>
+		</a>
+		<div class="aui-center">
+			<span class="aui-center-title"></span>
+		</div>
+		<a href="javascript:;" class="aui-navBar-item">
+			<i class="icon icon-info"></i>
+		</a>
+	</header>
+	<section class="aui-scrollView">
+
+		<div class="aui-account-title">
+			<h1>账号登录</h1>
+		</div>
+
+		<div class="aui-account-input">
+			<div class="b-line">
+				<input type="text" placeholder="请输入手机号码" id="login_phone">
+				<label class="err err-top40" id="login_phone_text">手机号错误</label>
+			</div>
+			<div class="">
+				<input type="password" placeholder="请输入密码 " id="login_password">
+				<label class="err err-top40" id="login_password_text">请输入密码</label>
+			</div>
+		</div>
+		<div class="aui-account-button">
+			<button id="login_submit">登录</button>
+		</div>
+		<div class="aui-account-link">
+			<a href="javascript:;">注册账号</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="javascript:;">忘记密码</a>
+		</div>
+
+		<div class="aui-account-footer">
+			<div class="aui-account-footer-title">
+				<h2>其它登录方式</h2>
+			</div>
+			<div class="aui-palace">
+				<a href="javascript:;" class="aui-palace-grid">
+					<div class="aui-palace-grid-icon">
+						<img src="wx.png" tppabs="http://www.17sucai.com/preview/1527619/2019-04-21/Account/images/wx.png" alt="">
+					</div>
+					<div class="aui-palace-grid-text">
+						<h2>微信</h2>
+					</div>
+				</a>
+				<a href="javascript:;" class="aui-palace-grid">
+					<div class="aui-palace-grid-icon">
+						<img src="wb.png" tppabs="http://www.17sucai.com/preview/1527619/2019-04-21/Account/images/wb.png" alt="">
+					</div>
+					<div class="aui-palace-grid-text">
+						<h2>微博</h2>
+					</div>
+				</a>
+				<a href="javascript:;" class="aui-palace-grid">
+					<div class="aui-palace-grid-icon">
+						<img src="qq.png" tppabs="http://www.17sucai.com/preview/1527619/2019-04-21/Account/images/qq.png" alt="">
+					</div>
+					<div class="aui-palace-grid-text">
+						<h2>QQ</h2>
+					</div>
+				</a>
+			</div>
+		</div>
+
+
+	</section>
+</section>
+</body>
+<script type="text/javascript">
+	$(function(){
+		var regconfig=[
+			{eleinput:"login_phone",eletext:"login_phone_text",rule:[{reg:/^.+$/,text:"手机号不能为空"},{reg:/^1[34578]\d{9}$/,text:"手机号格式错误"}]},
+			{eleinput:"login_password",eletext:"login_password_text",rule:[{reg:/^.+$/,text:"密码不能为空"}]}
+		];
+		tbdValidate(
+			regconfig,
+			{
+				elesubmit:"login_submit",//提交按钮
+				funsubmit:function(){//验证通过可提交回调
+					//信息提交接口
+					alert("登陆成功");
+				},
+				funerr:function(){//不可提交回调
+
+				},
+				funerrlist:function(errlist){
+					$('#'+ errlist[0]).focus();
+				}
+			}
+		);
+
+	});
+</script>
+</html>
