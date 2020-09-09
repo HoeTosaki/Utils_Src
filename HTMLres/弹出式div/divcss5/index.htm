@@ -1,66 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8" />
-<title>jQueryå®ç°çš„å¼¹å‡ºå±‚ç‰¹æ•ˆ åœ¨çº¿æ¼”ç¤º www.divcss5.com</title>
-<link rel="stylesheet" href="common.css" tppabs="http://www.divcss5.com/yanshi/201308/2013082401/css/common.css" type="text/css" />
-<style type="text/css">
-.divcss5_list_title{background:#eeeeee; border:1px solid #cccccc; padding:1em;}
-.divcss5_list_content{padding:1em;}
-#tinybox{position:absolute; display:none; padding:10px; background:#ffffff url("preload.gif")/*tpa=http://www.divcss5.com/yanshi/201308/2013082401/image/preload.gif*/ no-repeat 50% 50%; border:10px solid #e3e3e3; z-index:2000;}
-#tinymask{position:absolute; display:none; top:0; left:0; height:100%; width:100%; background:#000000; z-index:1500;}
-#tinycontent{background:#ffffff; font-size:1.1em;}
 
-#n{margin:10px auto; width:920px; border:1px solid #CCC;font-size:12px; line-height:30px;}
-#n a{ padding:0 4px; color:#333}
-</style>
-<script type="text/javascript" src="tinybox.js" tppabs="http://www.divcss5.com/yanshi/201308/2013082401/js/tinybox.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <title>jQueryå®ç°çš„å¼¹å‡ºå±‚ç‰¹æ•ˆ åœ¨çº¿æ¼”ç¤º www.divcss5.com</title>
+  <link rel="stylesheet" href="common.css" tppabs="http://www.divcss5.com/yanshi/201308/2013082401/css/common.css"
+    type="text/css" />
+  <style type="text/css">
+    .divcss5_list_title {
+      background: #eeeeee;
+      border: 1px solid #cccccc;
+      padding: 1em;
+    }
+
+    .divcss5_list_content {
+      padding: 1em;
+    }
+
+    #tinybox {
+      position: absolute;
+      display: none;
+      padding: 10px;
+      background: #ffffff url("preload.gif")
+        /*tpa=http://www.divcss5.com/yanshi/201308/2013082401/image/preload.gif*/
+        no-repeat 50% 50%;
+      border: 10px solid #e3e3e3;
+      z-index: 2000;
+    }
+
+    #tinymask {
+      position: absolute;
+      display: none;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: #000000;
+      z-index: 1500;
+    }
+
+    #tinycontent {
+      background: #ffffff;
+      font-size: 1.1em;
+    }
+
+    #n {
+      margin: 10px auto;
+      width: 920px;
+      border: 1px solid #CCC;
+      font-size: 12px;
+      line-height: 30px;
+    }
+
+    #n a {
+      padding: 0 4px;
+      color: #333
+    }
+  </style>
+  <script type="text/javascript" src="tinybox.js"></script>
 </head>
 
 <body>
-<p id="n"><a href="javascript:if(confirm('http://www.divcss5.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.divcss5.com/'" tppabs="http://www.divcss5.com/">CSS</a>
-<a href="javascript:if(confirm('http://www.divcss5.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.divcss5.com/'" tppabs="http://www.divcss5.com/">divcss5</a>ï¼š
-<a href="javascript:if(confirm('http://www.divcss5.com/html/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.divcss5.com/html/'" tppabs="http://www.divcss5.com/html/">HtmlåŸºç¡€</a>
-<a href="javascript:if(confirm('http://www.divcss5.com/htmlrumen/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.divcss5.com/htmlrumen/'" tppabs="http://www.divcss5.com/htmlrumen/">htmlå…¥é—¨</a>
-<a href="javascript:if(confirm('http://www.divcss5.com/rumen/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.divcss5.com/rumen/'" tppabs="http://www.divcss5.com/rumen/">CSSåŸºç¡€</a>
-<a href="javascript:if(confirm('http://www.divcss5.com/cssrumen/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.divcss5.com/cssrumen/'" tppabs="http://www.divcss5.com/cssrumen/">CSSå…¥é—¨</a>
-<a href="javascript:if(confirm('http://www.divcss5.com/css-hack/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.divcss5.com/css-hack/'" tppabs="http://www.divcss5.com/css-hack/">CSS Hack</a>
-<a href="javascript:if(confirm('http://www.divcss5.com/css-texiao/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.divcss5.com/css-texiao/'" tppabs="http://www.divcss5.com/css-texiao/">CSSç‰¹æ•ˆ</a>
-<a href="javascript:if(confirm('http://www.divcss5.com/template/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.divcss5.com/template/'" tppabs="http://www.divcss5.com/template/">CSSæ¨¡å—</a>
-<a href="javascript:if(confirm('http://www.divcss5.com/wenji/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.divcss5.com/wenji/'" tppabs="http://www.divcss5.com/wenji/">CSSçŸ¥ç­”</a>
-<a href="javascript:if(confirm('http://www.divcss5.com/peixun/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.divcss5.com/peixun/'" tppabs="http://www.divcss5.com/peixun/">CSSåŸ¹è®­</a>
-<a href="javascript:if(confirm('http://www.css5.com.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css5.com.cn/'" tppabs="http://www.css5.com.cn/">CSSåˆ‡å›¾</a>
-<a href="javascript:if(confirm('http://www.divcss5.com/css-tool/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.divcss5.com/css-tool/'" tppabs="http://www.divcss5.com/css-tool/">CSSå·¥å…·</a>
-<a href="javascript:if(confirm('http://www.divcss5.com/jiqiao/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.divcss5.com/jiqiao/'" tppabs="http://www.divcss5.com/jiqiao/">CSSæŠ€å·§</a>
-<a href="javascript:if(confirm('http://www.divcss5.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.divcss5.com/'" tppabs="http://www.divcss5.com/">DIV+CSS</a></p>
-<p>&nbsp;</p>
-	<div class="divcss5_out_box">
-    	<div class="divcss5_in_box">
-            <h3 class="divcss5_title">jQueryå®ç°çš„å¼¹å‡ºå±‚æ•ˆæœ åœ¨çº¿æ¼”ç¤ºæ•ˆæœå¦‚ä¸‹ï¼š</h3>
-            <div class="divcss5_main_con">
-            	<div class="divcss5_list_title"><b>åŠ è½½ä¸€ä¸ªé™æ€é¡µé¢</b><a class="ml20" href="#" id="click_test1">æ•ˆæœé¢„è§ˆ</a></div>
-              <div class="divcss5_list_content">åŠ è½½ä¸€ä¸ªé™æ€ç½‘é¡µtest.htmlé¡µé¢ï¼ŒæœåŠ¡å™¨ä¸Šå¯ä»¥æµ‹è¯•æœ¬åœ°ä¸èƒ½æ˜¾ç¤ºï¼Œåœ¨æœåŠ¡å™¨é¡¹ç›®é‡Œå¯ä»¥çœ‹è§æ•ˆæœ</div>
-                <div class="divcss5_list_title"><b>å›¾ç‰‡</b><a class="ml20" href="#" id="click_test2">æ•ˆæœé¢„è§ˆ</a></div>
-              <div class="divcss5_list_content">ç”¨é…·é…·çš„æµ®åŠ¨å±‚æ˜¾ç¤ºå›¾ç‰‡</div>
-                <div class="divcss5_list_title"><b>æ˜¾ç¤ºflash</b><a class="ml20" href="#" id="click_test3">æ•ˆæœé¢„è§ˆ</a></div>
-                <div class="divcss5_list_content">ç”¨é…·é…·çš„æµ®åŠ¨å±‚æ˜¾ç¤ºflash</div>
-                <div class="divcss5_list_title"><b>è‡ªåŠ¨éšè—</b><a class="ml20" href="#" id="click_test4">æ•ˆæœé¢„è§ˆ</a></div>
-              <div class="divcss5_list_content">å±‚æ˜¾ç¤ºä¸€æ®µæ—¶é—´åè‡ªåŠ¨éšè—ï¼Œå½“ä½œæ“ä½œæç¤ºç”¨æ˜¯ä¸ªå¾ˆä¸é”™çš„é€‰æ‹©</div>
-</div>
-            <div class="divcss5_footer">
-            	è¿”å› ä¸‹è½½<a href="javascript:if(confirm('http://www.divcss5.com/css-texiao/texiao608.shtml  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.divcss5.com/css-texiao/texiao608.shtml'" tppabs="http://www.divcss5.com/css-texiao/texiao608.shtml">JS+CSSå¼¹å‡ºå±‚ç‰¹æ•ˆ</a>ï¼šhttp://www.divcss5.com/css-texiao/texiao608.shtml
-            </div>
-        </div>
-    </div>
-    
-	<script type="text/javascript">
-        T$('click_test1').onclick = function(){TINY.box.show('test.html'/*tpa=http://www.divcss5.com/yanshi/201308/2013082401/test.html*/,1,300,150,1)}//test.htmlä¸ºå¼¹å‡ºå±‚å¯¹åº”ç½‘é¡µ
-        var content2 = "<img width='554' height='344' src='img.png'/*tpa=http://www.divcss5.com/yanshi/201308/2013082401/image/img.png*/ />";//å¼¹å‡ºå›¾ç‰‡
-        T$('click_test2').onclick = function(){TINY.box.show(content2,0,0,0,1)}
-        var content3 = "<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' width='550' height='400'><param name='movie' value='as3_clock_2.swf'/*tpa=http://www.divcss5.com/yanshi/201308/2013082401/flash/as3_clock_2.swf*/ /><param name='quality' value='high' /><param name='wmode' value='opaque' /><embed height='400' width='550'  src='as3_clock_2.swf'/*tpa=http://www.divcss5.com/yanshi/201308/2013082401/flash/as3_clock_2.swf*/ type='application/x-shockwave-flash'></embed></object>";//å¼¹å‡ºflashåŠ¨ç”»
-        T$('click_test3').onclick = function(){TINY.box.show(content3,0,0,0,1)}
-        var content4 = "è¯¥æµ®åŠ¨divå±‚å°†åœ¨3ç§’é’Ÿå†…æ¶ˆå¤±ã€‚";//å¼¹å‡ºå±‚è‡ªåŠ¨æ¶ˆå¤±
-        T$('click_test4').onclick = function(){TINY.box.show(content4,0,0,0,0,3)}
-    </script>
+
+  <div class="divcss5_list_title"><b>åŠ è½½ä¸€ä¸ªé™æ€é¡µé¢</b><a class="ml20" href="#" id="click_test1">æ•ˆæœé¢„è§ˆ</a></div>
+  <div class="divcss5_list_content">åŠ è½½ä¸€ä¸ªé™æ€ç½‘é¡µtest.htmlé¡µé¢ï¼ŒæœåŠ¡å™¨ä¸Šå¯ä»¥æµ‹è¯•æœ¬åœ°ä¸èƒ½æ˜¾ç¤ºï¼Œåœ¨æœåŠ¡å™¨é¡¹ç›®é‡Œå¯ä»¥çœ‹è§æ•ˆæœ</div>
+  <div class="divcss5_list_title"><b>å›¾ç‰‡</b><a class="ml20" href="#" id="click_test2">æ•ˆæœé¢„è§ˆ</a></div>
+  <div class="divcss5_list_content">ç”¨é…·é…·çš„æµ®åŠ¨å±‚æ˜¾ç¤ºå›¾ç‰‡</div>
+  <div class="divcss5_list_title"><b>æ˜¾ç¤ºflash</b><a class="ml20" href="#" id="click_test3">æ•ˆæœé¢„è§ˆ</a></div>
+  <div class="divcss5_list_content">ç”¨é…·é…·çš„æµ®åŠ¨å±‚æ˜¾ç¤ºflash</div>
+  <div class="divcss5_list_title"><b>è‡ªåŠ¨éšè—</b><a class="ml20" href="#" id="click_test4">æ•ˆæœé¢„è§ˆ</a></div>
+  <div class="divcss5_list_content">å±‚æ˜¾ç¤ºä¸€æ®µæ—¶é—´åè‡ªåŠ¨éšè—ï¼Œå½“ä½œæ“ä½œæç¤ºç”¨æ˜¯ä¸ªå¾ˆä¸é”™çš„é€‰æ‹©</div>
+
+  <script type="text/javascript">
+    T$('click_test1').onclick = function () {
+      TINY.box.show('test.html' /*tpa=http://www.divcss5.com/yanshi/201308/2013082401/test.html*/ , 1, 300, 150, 1)
+    } //test.htmlä¸ºå¼¹å‡ºå±‚å¯¹åº”ç½‘é¡µ
+    var content2 =
+      "<img width='554' height='344' src='img.png'/*tpa=http://www.divcss5.com/yanshi/201308/2013082401/image/img.png*/ />"; //å¼¹å‡ºå›¾ç‰‡
+    T$('click_test2').onclick = function () {
+      TINY.box.show(content2, 0, 0, 0, 1)
+    }
+    var content3 =
+      "<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' width='550' height='400'><param name='movie' value='as3_clock_2.swf'/*tpa=http://www.divcss5.com/yanshi/201308/2013082401/flash/as3_clock_2.swf*/ /><param name='quality' value='high' /><param name='wmode' value='opaque' /><embed height='400' width='550'  src='as3_clock_2.swf'/*tpa=http://www.divcss5.com/yanshi/201308/2013082401/flash/as3_clock_2.swf*/ type='application/x-shockwave-flash'></embed></object>"; //å¼¹å‡ºflashåŠ¨ç”»
+    T$('click_test3').onclick = function () {
+      TINY.box.show(content3, 0, 0, 0, 1)
+    }
+    var content4 = "è¯¥æµ®åŠ¨divå±‚å°†åœ¨3ç§’é’Ÿå†…æ¶ˆå¤±ã€‚"; //å¼¹å‡ºå±‚è‡ªåŠ¨æ¶ˆå¤±
+    T$('click_test4').onclick = function () {
+      TINY.box.show(content4, 0, 0, 0, 0, 3)
+    }
+  </script>
 </body>
+
 </html>
